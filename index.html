@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DIANA — Digital Twin & AI for Pediatric Type 1 Diabetes</title>
+  <meta name="description" content="DIANA: AI-powered digital twin platform for adaptive management of pediatric Type 1 Diabetes. Funded by MUR – FIS 3, University of Padova." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav>
+  <a class="nav-brand" href="#">
+    <img src="assets/diana-logo.png" alt="DIANA logo" />
+    <span class="nav-brand-name">DIANA</span>
+  </a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#overview">Project</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#milestones">Milestones</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<header class="hero">
+  <div class="hero-content">
+    <img class="hero-logo" src="assets/diana-logo.png" alt="DIANA project logo" />
+    <div class="hero-badge">MUR – FIS 3 · Research Project, Grant ID: FIS-2024-01976</div>
+    <h1>
+      Digital twin and Artificial Intelligence<br> 
+      for adaptive maNAgement of pediatrics with type 1 diabetes
+    </h1>
+    <p class="hero-sub">
+      DIANA develops a personalized, AI-powered digital twin platform to provide adaptive clinical decision support for children and adolescents with Type 1 Diabetes under multiple daily injection therapy.
+    </p>
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <div class="icon">🏛️</div>
+        <div><strong>University of Padova</strong><br>Dept. of Information Engineering</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="icon">📅</div>
+        <div><strong>May 2026 – May 2030</strong><br>48-month duration</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="icon">💶</div>
+        <div><strong>€1,036,113.73</strong><br>MUR FIS 3 funding</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="icon">🧒</div>
+        <div><strong>150 participants</strong><br>Clinical trial</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ── OVERVIEW ── -->
+<section id="overview">
+  <div class="container">
+    <div class="section-label">About the Project</div>
+    <h2 class="section-title">What is DIANA?</h2>
+    <p class="section-intro">
+      DIANA stands for <strong>Digital twin and Artificial Intelligence for adaptive maNAgement of pediatrics with type 1 diabetes</strong>. The project addresses a critical gap: existing decision-support tools for Type 1 Diabetes management are not designed for the unique physiological and lifestyle variability of children and adolescents.
+    </p>
+
+    <div class="overview-grid">
+      <div class="overview-card">
+        <div class="card-icon">🧬</div>
+        <h3>Personalized Digital Twins</h3>
+        <p>Patient-specific digital twin models built with ReplayBG to simulate individual glucose-insulin dynamics, continuously updated from wearable sensor data.</p>
+      </div>
+      <div class="overview-card">
+        <div class="card-icon">🤖</div>
+        <h3>AI Decision Support</h3>
+        <p>Multi-component decision support system covering basal insulin dosing, meal bolus management, physical activity recommendations, and safety interventions.</p>
+      </div>
+      <div class="overview-card">
+        <div class="card-icon">📱</div>
+        <h3>Wearable Integration</h3>
+        <p>Seamless connection to continuous glucose monitors, activity trackers, and smart insulin pens, feeding real-time data into the platform.</p>
+      </div>
+      <div class="overview-card">
+        <div class="card-icon">⚖️</div>
+        <h3>Regulatory Compliance</h3>
+        <p>Designed from the ground up for AI-Act, GDPR, and Medical Device Regulation compliance, ensuring safety and explainability throughout.</p>
+      </div>
+      <div class="overview-card">
+        <div class="card-icon">🏥</div>
+        <h3>Clinical Validation</h3>
+        <p>Rigorous 6-month randomized clinical trial with 150 pediatric participants to validate efficacy and safety of the platform in real-world settings.</p>
+      </div>
+      <div class="overview-card">
+        <div class="card-icon">🌐</div>
+        <h3>Open-Source Release</h3>
+        <p>Upon project completion, the full platform will be released as an open-source solution to maximize impact and enable adoption by healthcare systems worldwide.</p>
+      </div>
+    </div>
+
+    <div class="why-block">
+      <div>
+        <h3>Why Pediatric T1D Needs DIANA</h3>
+        <p>
+          Children and adolescents with Type 1 Diabetes face challenges that adult-focused tools cannot address: rapid growth, puberty-induced insulin resistance, highly variable physical activity, unpredictable meal patterns, and the involvement of caregivers in clinical decisions. DIANA is designed from the ground up around these realities, co-designed with patients, families, and clinicians to ensure it is both clinically effective and practically usable.
+        </p>
+      </div>
+      <div class="why-stats">
+        <div class="stat-box"><div class="stat-num">~8.4M</div><div class="stat-label">children with T1D worldwide</div></div>
+        <div class="stat-box"><div class="stat-num">48 mo</div><div class="stat-label">project duration</div></div>
+        <div class="stat-box"><div class="stat-num">150</div><div class="stat-label">trial participants</div></div>
+        <div class="stat-box"><div class="stat-num">7</div><div class="stat-label">project milestones</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TEAM ── -->
+<section id="team">
+  <div class="container">
+    <div class="section-label">People &amp; Partners</div>
+    <h2 class="section-title">The DIANA Team</h2>
+    <p class="section-intro">
+      DIANA is led by the Bioengineering group at the Department of Information Engineering, University of Padova, in close collaboration with two clinical centers specializing in pediatric diabetes care.
+    </p>
+
+    <!-- PI -->
+    <div class="pi-block">
+      <div class="pi-avatar"><img src="assets/cappon.png" alt="Giacomo Cappon" /></div>
+      <div class="pi-info">
+        <div class="pi-badge-pill">Principal Investigator</div>
+        <h3>Giacomo Cappon</h3>
+        <div class="pi-role">Assistant Professor of Bioengineering</div>
+        <div class="pi-affil">Department of Information Engineering (DEI), University of Padova</div>
+        <div class="pi-bio">
+          Overall project coordination, technical leadership, and development of the AI-powered digital twin platform. Research focus: glucose monitoring, decision support systems, and wearable technology for diabetes management.
+        </div>
+      </div>
+      <div class="pi-contact">
+        <a href="mailto:giacomo.cappon@unipd.it">✉️ giacomo.cappon@unipd.it</a>
+      </div>
+    </div>
+
+    <!-- Partners -->
+    <div class="partners-label">Partner Departments &amp; Clinical Centers</div>
+    <div class="partners-grid">
+
+      <div class="partner-card">
+        <div class="partner-icon eng">🏛️</div>
+        <h3>Department of Information Engineering</h3>
+        <div class="partner-inst">University of Padova (DEI-UNIPD)</div>
+        <div class="partner-role">
+          Technical hub of the project. Responsible for digital twin development, AI algorithm design, platform engineering, wearable integration, and regulatory compliance.
+        </div>
+      </div>
+
+      <div class="partner-card">
+        <div class="partner-icon clin">🏥</div>
+        <h3>Pediatric Diabetology Unit</h3>
+        <div class="partner-inst">University Hospital of Padova</div>
+        <div class="partner-head">Head: Dr. Carlo Moretti</div>
+        <div class="partner-role">
+          Lead clinical partner for co-design, expert clinical input on pediatric T1D management protocols, and coordination of the clinical trial in the Padova cohort.
+        </div>
+        <span class="partner-active">✅ Active partner</span>
+      </div>
+
+      <div class="partner-card">
+        <div class="partner-icon clin">🏥</div>
+        <h3>Pediatric Endocrinology Unit</h3>
+        <div class="partner-inst">Bambino Gesù Pediatric Hospital, Rome</div>
+        <div class="partner-head">Head: Dr. Stefano Cianfarani</div>
+        <div class="partner-role">
+          Clinical partner for the Rome cohort of the trial. Provides expertise in pediatric endocrinology and T1D management in a high-volume national reference center.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── MILESTONES ── -->
+<section id="milestones">
+  <div class="container">
+    <div class="section-label">Timeline</div>
+    <h2 class="section-title">Project Milestones</h2>
+    <p class="section-intro">
+      DIANA follows a structured 48-month roadmap from co-design with stakeholders through clinical validation and open-source release.
+    </p>
+
+    <div class="timeline">
+      <div class="timeline-item launch">
+        <div class="milestone-card">
+          <div class="milestone-header">
+            <h4>Project Launch</h4>
+            <span class="milestone-tag tag-launch">🚀 Launching Soon</span>
+          </div>
+          <div class="milestone-date">May 30, 2026</div>
+          <p>Official start of the DIANA project. Research team onboarding, initial co-design preparation, and infrastructure setup.</p>
+        </div>
+      </div>
+      <div class="timeline-item upcoming">
+        <div class="milestone-card">
+          <div class="milestone-header">
+            <h4>M1 — Co-design Completion</h4>
+            <span class="milestone-tag tag-upcoming">Month 3</span>
+          </div>
+          <div class="milestone-date">August 2026</div>
+          <p>Completion of participatory co-design sessions with patients, caregivers, and clinical partners to define platform requirements and workflows.</p>
+        </div>
+      </div>
+      <div class="timeline-item upcoming">
+        <div class="milestone-card">
+          <div class="milestone-header">
+            <h4>M2 — Digital Twin Framework Refined</h4>
+            <span class="milestone-tag tag-upcoming">Month 9</span>
+          </div>
+          <div class="milestone-date">February 2027</div>
+          <p>Pediatric-specific digital twin models validated using retrospective datasets. ReplayBG framework adapted for growth and developmental variability.</p>
+        </div>
+      </div>
+      <div class="timeline-item upcoming">
+        <div class="milestone-card">
+          <div class="milestone-header">
+            <h4>M3 — DSS Modules Integrated</h4>
+            <span class="milestone-tag tag-upcoming">Month 18</span>
+          </div>
+          <div class="milestone-date">November 2027</div>
+          <p>All decision support system modules (basal, bolus, activity, safety) integrated into the mobile and web platform with full wearable connectivity.</p>
+        </div>
+      </div>
+      <div class="timeline-item upcoming">
+        <div class="milestone-card">
+          <div class="milestone-header">
+            <h4>M4 — Full Platform Validated</h4>
+            <span class="milestone-tag tag-upcoming">Month 24</span>
+          </div>
+          <div class="milestone-date">May 2028</div>
+          <p>Pre-clinical validation complete. Platform ready for regulatory review and clinical trial preparation.</p>
+        </div>
+      </div>
+      <div class="timeline-item upcoming">
+        <div class="milestone-card">
+          <div class="milestone-header">
+            <h4>M5 — Clinical Trial Protocol Approved</h4>
+            <span class="milestone-tag tag-upcoming">Month 27</span>
+          </div>
+          <div class="milestone-date">August 2028</div>
+          <p>Ethics committee and regulatory approval obtained for the 6-month randomized controlled trial with 150 pediatric participants.</p>
+        </div>
+      </div>
+      <div class="timeline-item upcoming">
+        <div class="milestone-card">
+          <div class="milestone-header">
+            <h4>M6 — Clinical Trial Completed</h4>
+            <span class="milestone-tag tag-upcoming">Month 45</span>
+          </div>
+          <div class="milestone-date">February 2030</div>
+          <p>6-month RCT with 150 children and adolescents with T1D completed. Primary endpoints evaluated and results submitted for publication.</p>
+        </div>
+      </div>
+      <div class="timeline-item upcoming">
+        <div class="milestone-card">
+          <div class="milestone-header">
+            <h4>M7 — Open-Source Release</h4>
+            <span class="milestone-tag tag-upcoming">Month 48</span>
+          </div>
+          <div class="milestone-date">May 2030</div>
+          <p>Full DIANA platform released as open-source software. Documentation, datasets, and trained models made publicly available to the research community.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── NEWS ── -->
+<section id="news">
+  <div class="container">
+    <div class="section-label">Latest Updates</div>
+    <h2 class="section-title">News</h2>
+    <p class="section-intro">
+      Stay up to date with the latest developments, events, and milestones from the DIANA project.
+    </p>
+    <div id="news-list">
+      <p class="news-empty">Loading news…</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── PUBLICATIONS ── -->
+<section id="publications">
+  <div class="container">
+    <div class="section-label">Research Output</div>
+    <h2 class="section-title">Publications</h2>
+    <p class="section-intro">
+      Scientific publications, conference papers, and software releases produced within the DIANA project.
+    </p>
+    <div id="pub-list">
+      <p class="pub-empty">Loading publications…</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="container">
+    <div class="section-label">Get in Touch</div>
+    <h2 class="section-title">Contact &amp; Funding</h2>
+    <p class="section-intro">
+      For collaborations, open positions, or information about the clinical trial, please reach out to the DIANA team.
+    </p>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Principal Investigator</h3>
+        <div class="contact-item">
+          <div class="contact-icon">👤</div>
+          <div><strong>Name</strong><span>Prof. Giacomo Cappon</span></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div><strong>Email</strong><a href="mailto:giacomo.cappon@unipd.it">giacomo.cappon@unipd.it</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">🏛️</div>
+          <div><strong>Department</strong><span>Department of Information Engineering (DEI)</span></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div><strong>Institution</strong><span>University of Padova, Italy</span></div>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <h3>Project Information</h3>
+        <div class="contact-item">
+          <div class="contact-icon">🔬</div>
+          <div><strong>Research Group</strong><span>Bioengineering — DEI, UniPD</span></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📋</div>
+          <div><strong>Grant Reference</strong><span>FIS-2024-01976</span></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📅</div>
+          <div><strong>Duration</strong><span>May 30, 2026 – May 29, 2030</span></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">🧒</div>
+          <div><strong>Clinical Trial</strong><span>Recruiting 2028 — pediatric T1D patients (ages 6–18)</span></div>
+        </div>
+      </div>
+
+      <div class="funder-block">
+        <div class="funder-logo">🇮🇹</div>
+        <div class="funder-text">
+          <h4>Funded by the Italian Ministry of University and Research</h4>
+          <p>DIANA is supported under the PRIN (Progetti di Rilevante Interesse Nazionale) – FIS 3 funding scheme, which supports high-impact scientific research projects at Italian universities.</p>
+        </div>
+        <div class="funder-grant">
+          <div class="grant-amt">€1,036,113.73</div>
+          <div class="grant-label">Total Funding</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <p>
+    <strong>DIANA Project</strong> — Digital Twin and Artificial Intelligence for Adaptive Management of Pediatrics with Type 1 Diabetes<br>
+    Department of Information Engineering, University of Padova &nbsp;·&nbsp; Funded by MUR – FIS 3 &nbsp;·&nbsp; Grant ID: FIS-2024-01976 &nbsp;·&nbsp; 2026–2030
+  </p>
+</footer>
+
+<!-- ── SCRIPTS ── -->
+<script>
+  /* --- Mobile nav toggle --- */
+  function toggleMenu() {
+    document.getElementById('nav-links').classList.toggle('open');
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* NEWS                                                                 */
+  /* To add a news item: edit data/news.json and add an object with:     */
+  /*   { "date": "YYYY-MM-DD", "title": "...", "body": "...",            */
+  /*     "tag": "Milestone|Paper|Event|Award|..." }                      */
+  /* ------------------------------------------------------------------ */
+  const MONTH_NAMES = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+  function renderNews(items) {
+    const container = document.getElementById('news-list');
+    if (!items || items.length === 0) {
+      container.innerHTML = '<p class="news-empty">No news yet — check back soon.</p>';
+      return;
+    }
+    // Sort newest first
+    const sorted = [...items].sort((a, b) => new Date(b.date) - new Date(a.date));
+    container.innerHTML = sorted.map(item => {
+      const d = new Date(item.date + 'T00:00:00');
+      return `
+        <div class="news-card">
+          <div class="news-date-col">
+            <div class="news-day">${String(d.getDate()).padStart(2,'0')}</div>
+            <div class="news-month">${MONTH_NAMES[d.getMonth()]}</div>
+            <div class="news-year">${d.getFullYear()}</div>
+          </div>
+          <div class="news-body">
+            ${item.tag ? `<span class="news-tag">${item.tag}</span>` : ''}
+            <h4>${item.title}</h4>
+            <p>${item.body}</p>
+          </div>
+        </div>`;
+    }).join('');
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* PUBLICATIONS                                                         */
+  /* To add a publication: edit data/publications.json and add:          */
+  /*   { "year": 2026, "authors": "Cappon G. et al.",                    */
+  /*     "title": "...", "journal": "...",                               */
+  /*     "doi": "10.xxxx/...",   ← leave "" if not yet assigned          */
+  /*     "type": "Journal Article|Conference Paper|Preprint|Software" }  */
+  /* ------------------------------------------------------------------ */
+  const TYPE_CLASS = {
+    'Journal Article': 'pill-journal',
+    'Conference Paper': 'pill-conf',
+    'Preprint': 'pill-preprint',
+    'Software': 'pill-software',
+  };
+
+  function renderPublications(items) {
+    const container = document.getElementById('pub-list');
+    if (!items || items.length === 0) {
+      container.innerHTML = '<p class="pub-empty">No publications yet — results will appear here as the project progresses.</p>';
+      return;
+    }
+    // Group by year, newest first
+    const byYear = {};
+    items.forEach(p => {
+      if (!byYear[p.year]) byYear[p.year] = [];
+      byYear[p.year].push(p);
+    });
+    const years = Object.keys(byYear).sort((a, b) => b - a);
+    container.innerHTML = years.map(year => `
+      <div class="pub-year-group">
+        <div class="pub-year-heading">${year}</div>
+        <div class="pub-list">
+          ${byYear[year].map(p => {
+            const pillClass = TYPE_CLASS[p.type] || 'pill-journal';
+            const doiHtml = p.doi
+              ? `<div class="pub-doi"><a href="https://doi.org/${p.doi}" target="_blank" rel="noopener">DOI: ${p.doi}</a></div>`
+              : '';
+            const noteHtml = p.note
+              ? `<div class="pub-note">${p.note}</div>`
+              : '';
+            return `
+              <div class="pub-card">
+                <span class="pub-type-pill ${pillClass}">${p.type}</span>
+                <div class="pub-info">
+                  <div class="pub-authors">${p.authors}</div>
+                  <div class="pub-title">${p.title}</div>
+                  <div class="pub-journal">${p.journal}</div>
+                  ${doiHtml}
+                  ${noteHtml}
+                </div>
+              </div>`;
+          }).join('')}
+        </div>
+      </div>`).join('');
+  }
+
+  /* ---- Load JSON data ---- */
+  async function loadData() {
+    try {
+      const [newsRes, pubRes] = await Promise.all([
+        fetch('data/news.json'),
+        fetch('data/publications.json')
+      ]);
+      const news = newsRes.ok ? await newsRes.json() : [];
+      const pubs = pubRes.ok  ? await pubRes.json()  : [];
+      renderNews(news);
+      renderPublications(pubs);
+    } catch (e) {
+      // fetch fails on file:// — show helpful message for local preview
+      document.getElementById('news-list').innerHTML =
+        '<p class="news-empty">Open via a local server or GitHub Pages to load news (fetch not available on file://).</p>';
+      document.getElementById('pub-list').innerHTML =
+        '<p class="pub-empty">Open via a local server or GitHub Pages to load publications.</p>';
+    }
+  }
+
+  loadData();
+</script>
+</body>
+</html>
